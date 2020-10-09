@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-form ref="form" :model="form" label-width="200px">
-    <el-form-item label="易班账号">
+      <el-form-item label="易班账号">
         <el-input v-model="form.nickName"></el-input>
       </el-form-item>
       <el-form-item label="易班密码">
@@ -173,10 +173,10 @@ export default {
         passwd: this.form.passwd,
       };
       const res = await this.$http.post("/formPost", data);
-      if(res.data.code===500){
-        alert(res.data.msg)
-      }else{
-        console.log(res.data.msg)
+      if (res.data.code === 500) {
+        alert(res.data.msg);
+      } else {
+        alert(res.data.msg);
       }
     },
   },

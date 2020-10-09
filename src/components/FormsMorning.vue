@@ -95,7 +95,7 @@ export default {
       if(res.data.code===500){
         alert(res.data.msg)
       }else{
-        console.log(res.data.msg)
+        alert(res.data.msg)
       }
     },
   },
