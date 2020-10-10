@@ -57,6 +57,7 @@
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">提交</el-button>
+        <el-button type="success" @click="$router.push('/')">返回主页</el-button>
       </el-form-item>
     </el-form>
   </div>
@@ -65,7 +66,6 @@
 <script>
 export default {
   name: "FormsAfternoon",
-  props: ["id"],
   data() {
     return {
       form: {

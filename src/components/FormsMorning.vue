@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <el-form ref="form" :model="form" label-width="200px">
       <el-form-item label="易班账号">
         <el-input v-model="form.nickName"></el-input>
@@ -27,6 +28,7 @@
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">提交</el-button>
+        <el-button type="success" @click="$router.push('/')">返回主页</el-button>
       </el-form-item>
     </el-form>
   </div>
@@ -35,7 +37,6 @@
 <script>
 export default {
   name: "FormsMorning",
-  props: ["id"],
   data() {
     return {
       form: {
