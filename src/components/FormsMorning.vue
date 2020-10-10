@@ -23,7 +23,7 @@
       <el-form-item label="今日身体状况">
         <el-input v-model="form.body.value"></el-input>
       </el-form-item>
-      <el-form-item label="备注">
+      <el-form-item label="备注（必填）">
         <el-input v-model="form.remark.value"></el-input>
       </el-form-item>
       <el-form-item>
@@ -62,7 +62,7 @@ export default {
         },
         remark: {
           id: "bc090a528eec274eb1912b08722d0721",
-          value: "",
+          value: "无",
         },
         nickName: "",
         passwd: "",
